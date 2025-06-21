@@ -1,0 +1,52 @@
+CoreWell Clinic Patient Registration Form – Pseudocode
+
+BEGIN RayMan Theraphy Clinic Form
+
+ ON page load:
+    - Display current date in the header
+
+ SHOW form with the following sections:
+    - Patient Info (First Name, Middle Initial, Last Name, Gender, DOB, SSN)
+    - Contact Info (Address 1, Address 2, City, State, Zip, Email, Phone)
+    - Patient History (Medical checkboxes, Notes)
+    - Health Details (Vaccination, Insurance, Health Slider)
+    - Portal Account (User ID, Password, Confirm Password)
+    - Form Actions (Submit, Review, Reset)
+
+ FOR each input field with validation:
+    - WHEN user types (oninput) or exits (onblur) the field:
+	CALL a validation function to:
+            Check required fields are not empty
+            Match formatting patterns (e.g. SSN, email, phone, zip)
+            Display inline error message under field if invalid
+            Clear error if input becomes valid
+
+ FOR the password field:
+    - WHEN user types, DISPLAY live helper text rules:
+        At least 1 uppercase, 1 lowercase, 1 number, 1 special char
+        Not contain the User ID
+        Change rule text color (red = invalid, green = valid)
+
+ WHEN user clicks [Review] button:
+    - LOOP through form elements
+    - IF element has value:
+        Create an HTML table row for each field/value
+        DISPLAY that table in the #showInput section under the form
+
+ WHEN user clicks [Submit] button:
+    - CHECK if all validation functions return true
+        IF true, submit form to thankyou2.html
+        ELSE, prevent submission and show errors
+
+ WHEN user clicks [Reset] button:
+    - CLEAR all form input fields
+    - CLEAR all error messages
+    - CLEAR the review preview
+
+ ON Thank You page load (thankyou2.html):
+    - Display header and message: “Thank you for creating an account!”
+
+ ON Contact Us page load (contact2.html):
+    - Display header and message: “Thank you for contacting RayMan Theraphy Clinic!”
+
+END
