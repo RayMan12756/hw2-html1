@@ -1,0 +1,189 @@
+/*
+Name: Rayyan Manasiya 
+Date Created: 2025-08-06
+Date Last Edited: 2025-09-06
+Version: 1.0
+Description: Homework 2 CSS file
+*/
+
+header {
+    width: 100%;
+    background-color: #fe7f00;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #c7b39e 0%, #ed6e05 100%);
+    margin: 0;
+    min-height: 100vh;
+}
+
+form {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.image {
+    text-align: left;
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tdl {
+    text-align: right;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #ffeedd;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #FFEEDD;
+    height: 2.0rem;
+    position: relative;
+    bottom: 0;
+}
+
+#footer {
+    text-align: right;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label {
+    text-align: right;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+}
+
+input, select {
+    text-align: right;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+textarea {
+    text-align: left;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#today {
+    text-align: left;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+p {
+    text-align: right;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    font-size: 0.95em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.pword-message {
+    text-align: right;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 100px;
+    background: #FFF6E5;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ed6e05;
+    margin-bottom: 10px;
+}
+
+#review {
+    margin-top: 5px;
+    background: #fe7f00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#review:hover {
+    background: #ed6e05;
+}
+
+table.output {
+    width: 500px;
+    background-color: #ffeedd;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: #333;
+    border: 2px solid #ed6e05;
+    margin-top: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+table.output th {
+    background-color: #fe7f00;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 18px 18px 0 0;
+    padding: 12px;
+}
+
+table.output tr {
+    background-color: #fff;
+}
+
+table.output tr:nth-child(even) {
+    background-color: #ffeedd;
+}
+
+table.output td {
+    padding: 10px;
+    border-bottom: 1px solid #ed6e05;
+    color: #333;
+}
+
+table.output tr:last-child td {
+    border-bottom: none;
+}
